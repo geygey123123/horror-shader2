@@ -4,19 +4,41 @@
 __pycache__/
 *.o
 *.obj
+*.class
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Build directories
 dist/
 build/
 target/
+.gradle/
 
-# Dependencies
-.venv/
-venv/
-node_modules/
-.julia/
-zig*/
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+.Python
+*.egg-info/
+.eggs/
 .mypy_cache/
 .pytest_cache/
-.gradle/
+.coverage
+coverage/
 
 # Logs and temp files
 *.log
@@ -24,23 +46,13 @@ zig*/
 *.swp
 *.swo
 
-# Environment
-.env
-.env.local
-*.env.*
+# OS generated files
+.DS_Store
+Thumbs.db
 
 # Editors
 .vscode/
 .idea/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
 
 # Compressed files
 *.zip
